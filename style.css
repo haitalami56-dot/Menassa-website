@@ -424,7 +424,8 @@ body:hover .cursor-glow {
 .hero {
     min-height: 100vh;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     position: relative;
     padding: 120px 0 80px;
     overflow: hidden;
@@ -1429,6 +1430,13 @@ body:hover .cursor-glow {
 }
 
 /* === Responsive === */
+
+/* Prevent horizontal overflow on all devices */
+html, body {
+    overflow-x: hidden;
+}
+
+/* === Tablet (max-width: 1024px) === */
 @media (max-width: 1024px) {
     .about-grid,
     .services-grid,
@@ -1453,13 +1461,28 @@ body:hover .cursor-glow {
     .contact-grid {
         grid-template-columns: 1fr;
     }
+
+    .hero-visual {
+        max-width: 100%;
+    }
+
+    .dashboard-mockup {
+        transform: none;
+        animation: none;
+    }
+
+    .container {
+        padding: 0 24px;
+    }
 }
 
+/* === Mobile landscape / Small tablet (max-width: 768px) === */
 @media (max-width: 768px) {
     :root {
         --section-padding: 80px 0;
     }
 
+    /* Navigation */
     .nav-links {
         display: none;
         position: fixed;
@@ -1490,10 +1513,10 @@ body:hover .cursor-glow {
         display: none;
     }
 
-    .about-grid,
-    .services-grid,
-    .testimonial-grid {
-        grid-template-columns: 1fr;
+    /* Hero */
+    .hero {
+        padding: 100px 0 60px;
+        min-height: auto;
     }
 
     .hero-title {
@@ -1509,7 +1532,10 @@ body:hover .cursor-glow {
     }
 
     .hero-visual {
-        margin-top: 48px;
+        margin-top: 32px;
+        max-width: 100%;
+        overflow: hidden;
+        perspective: none;
     }
 
     .dashboard-mockup {
@@ -1518,29 +1544,97 @@ body:hover .cursor-glow {
     }
 
     .mockup-body {
-        min-height: 200px;
+        min-height: 180px;
     }
 
+    /* Grids */
+    .about-grid,
+    .services-grid,
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Contact */
+    .contact-form {
+        padding: 24px 16px;
+    }
+
+    .contact-info {
+        padding: 24px 16px;
+    }
+
+    /* Footer */
     .footer-grid {
         grid-template-columns: 1fr;
         gap: 32px;
     }
 
+    /* CTA */
     .cta-card {
         padding: 48px 24px;
     }
 
+    .cta-card h2 {
+        font-size: clamp(1.5rem, 6vw, 2rem);
+    }
+
+    /* Features */
     .feature-graphic {
         width: 200px;
         height: 200px;
     }
 
+    .feature-content h3 {
+        font-size: 1.4rem;
+    }
+
+    /* Floating orbs - smaller on mobile */
+    .floating-orb {
+        display: none;
+    }
+
     .cursor-glow {
         display: none;
     }
+
+    /* Section headers */
+    .section-header h2 {
+        font-size: clamp(1.5rem, 6vw, 2.5rem);
+    }
+
+    /* Testimonials */
+    .testimonial-card {
+        padding: 24px;
+    }
+
+    /* Service cards */
+    .service-card {
+        padding: 28px 20px;
+    }
 }
 
+/* === Small phones (max-width: 480px) === */
 @media (max-width: 480px) {
+    :root {
+        --section-padding: 60px 0;
+    }
+
+    .container {
+        padding: 0 16px;
+    }
+
+    .hero {
+        padding: 90px 0 40px;
+    }
+
+    .hero-title {
+        font-size: clamp(1.6rem, 7vw, 2.2rem);
+    }
+
+    .hero-description {
+        font-size: 0.9rem;
+    }
+
     .hero-cta {
         flex-direction: column;
         align-items: center;
@@ -1551,6 +1645,16 @@ body:hover .cursor-glow {
         justify-content: center;
     }
 
+    .hero-stats {
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+    }
+
+    .hero-visual {
+        margin-top: 24px;
+    }
+
     .lang-switcher {
         gap: 2px;
     }
@@ -1558,6 +1662,53 @@ body:hover .cursor-glow {
     .lang-btn {
         padding: 4px 8px;
         font-size: 0.72rem;
+    }
+
+    .section-header h2 {
+        font-size: 1.4rem;
+    }
+
+    .section-header p {
+        font-size: 0.9rem;
+    }
+
+    .feature-row {
+        gap: 24px;
+    }
+
+    .feature-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .feature-list li {
+        font-size: 0.85rem;
+    }
+
+    .contact-form {
+        padding: 20px 12px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 16px; /* Prevents iOS zoom on focus */
+    }
+
+    .cta-card {
+        padding: 36px 16px;
+    }
+
+    .cta-card h2 {
+        font-size: 1.3rem;
+    }
+
+    .about-card {
+        padding: 24px 16px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
     }
 }
 
