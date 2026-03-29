@@ -284,6 +284,10 @@ body:hover .cursor-glow {
     color: var(--text-primary);
 }
 
+.logo-highlight {
+    color: #34D399;
+}
+
 /* English/French: hide logo icon, show text only */
 .logo-icon {
     display: none;
