@@ -284,11 +284,18 @@ body:hover .cursor-glow {
     color: var(--text-primary);
 }
 
+/* English/French: hide logo icon, show text only */
+.logo-icon {
+    display: none;
+}
+
+/* Arabic: show logo icon, hide text */
+[dir="rtl"] .logo-icon {
+    display: inline-flex;
+}
+
 [dir="rtl"] .logo-text {
-    font-family: 'Diwan Thuluth', 'Aref Ruqaa', serif;
-    font-size: 1.8rem;
-    font-weight: 700;
-    line-height: 1;
+    display: none;
 }
 
 .nav-links {
