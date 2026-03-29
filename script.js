@@ -6,6 +6,8 @@
 // ============ TRANSLATIONS ============
 const translations = {
     en: {
+        // Brand
+        "brand.name": "Menassa",
         // Nav
         "nav.home": "Home",
         "nav.about": "About",
@@ -120,6 +122,7 @@ const translations = {
     },
 
     fr: {
+        "brand.name": "Menassa",
         "nav.home": "Accueil",
         "nav.about": "\u00C0 Propos",
         "nav.services": "Services",
@@ -225,6 +228,7 @@ const translations = {
     },
 
     ar: {
+        "brand.name": "مِنَصَّة",
         "nav.home": "\u0627\u0644\u0631\u0626\u064A\u0633\u064A\u0629",
         "nav.about": "\u0645\u0646 \u0646\u062D\u0646",
         "nav.services": "\u0627\u0644\u062E\u062F\u0645\u0627\u062A",

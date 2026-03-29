@@ -284,6 +284,13 @@ body:hover .cursor-glow {
     color: var(--text-primary);
 }
 
+[dir="rtl"] .logo-text {
+    font-family: 'Diwan Thuluth', 'Aref Ruqaa', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
 .nav-links {
     display: flex;
     align-items: center;
