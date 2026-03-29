@@ -1,5 +1,5 @@
 /* ============================================
-   MINASSAH - Adaptive Business Platform
+   MENASSA - Adaptive Business Platform
    JavaScript - Interactions & i18n
    ============================================ */
 
@@ -80,13 +80,13 @@ const translations = {
         // Testimonials
         "testimonials.tag": "Testimonials",
         "testimonials.title": "What Our Clients Say",
-        "testimonials.t1Text": "\"Minassah transformed our entire business operations. The platform they built for us handles everything from inventory to customer management seamlessly.\"",
+        "testimonials.t1Text": "\"Menassa transformed our entire business operations. The platform they built for us handles everything from inventory to customer management seamlessly.\"",
         "testimonials.t1Name": "Ahmed Khalil",
         "testimonials.t1Role": "CEO, RetailHub",
         "testimonials.t2Text": "\"The adaptability of the platform is remarkable. We started as a small clinic and now manage 12 locations, all through the same system.\"",
         "testimonials.t2Name": "Sophie Bernard",
         "testimonials.t2Role": "Director, MediCare Plus",
-        "testimonials.t3Text": "\"Working with Minassah was a game-changer. They understood our vision and delivered a platform that exceeded every expectation.\"",
+        "testimonials.t3Text": "\"Working with Menassa was a game-changer. They understood our vision and delivered a platform that exceeded every expectation.\"",
         "testimonials.t3Name": "Youssef Mansour",
         "testimonials.t3Role": "Founder, EduTech Academy",
 
@@ -188,13 +188,13 @@ const translations = {
 
         "testimonials.tag": "T\u00E9moignages",
         "testimonials.title": "Ce Que Disent Nos Clients",
-        "testimonials.t1Text": "\u00ABMinassah a transform\u00E9 l\u2019ensemble de nos op\u00E9rations. La plateforme g\u00E8re tout, de l\u2019inventaire \u00E0 la gestion clients, de mani\u00E8re transparente.\u00BB",
+        "testimonials.t1Text": "\u00ABMenassa a transform\u00E9 l\u2019ensemble de nos op\u00E9rations. La plateforme g\u00E8re tout, de l\u2019inventaire \u00E0 la gestion clients, de mani\u00E8re transparente.\u00BB",
         "testimonials.t1Name": "Ahmed Khalil",
         "testimonials.t1Role": "PDG, RetailHub",
         "testimonials.t2Text": "\u00ABL\u2019adaptabilit\u00E9 de la plateforme est remarquable. Nous avons commenc\u00E9 comme une petite clinique et g\u00E9rons maintenant 12 sites.\u00BB",
         "testimonials.t2Name": "Sophie Bernard",
         "testimonials.t2Role": "Directrice, MediCare Plus",
-        "testimonials.t3Text": "\u00ABTravailler avec Minassah a \u00E9t\u00E9 un tournant. Ils ont compris notre vision et livr\u00E9 une plateforme qui a d\u00E9pass\u00E9 toutes nos attentes.\u00BB",
+        "testimonials.t3Text": "\u00ABTravailler avec Menassa a \u00E9t\u00E9 un tournant. Ils ont compris notre vision et livr\u00E9 une plateforme qui a d\u00E9pass\u00E9 toutes nos attentes.\u00BB",
         "testimonials.t3Name": "Youssef Mansour",
         "testimonials.t3Role": "Fondateur, EduTech Academy",
 
@@ -331,11 +331,11 @@ const translations = {
 };
 
 // ============ LANGUAGE SYSTEM ============
-let currentLang = localStorage.getItem('minassah-lang') || 'en';
+let currentLang = localStorage.getItem('menassa-lang') || 'en';
 
 function setLanguage(lang) {
     currentLang = lang;
-    localStorage.setItem('minassah-lang', lang);
+    localStorage.setItem('menassa-lang', lang);
 
     // Set direction
     const isRTL = lang === 'ar';
