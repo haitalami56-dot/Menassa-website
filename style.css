@@ -294,6 +294,11 @@ body:hover .cursor-glow {
     display: inline-flex;
 }
 
+[dir="rtl"] .logo-icon img {
+    height: 28px;
+    width: auto;
+}
+
 [dir="rtl"] .logo-text {
     display: none;
 }
