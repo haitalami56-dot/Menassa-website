@@ -602,28 +602,20 @@ body:hover .cursor-glow {
     background: var(--glass-border);
 }
 
-/* === Hero Visual / Spline 3D === */
+/* === Hero Visual / 3D Model === */
 .hero-visual {
-    max-width: 500px;
-    margin: 20px auto 0;
+    width: 100%;
+    max-width: 450px;
+    height: 400px;
+    margin: 0 auto;
     position: relative;
     z-index: 2;
 }
 
-.spline-container {
-    width: 100%;
-    aspect-ratio: 4 / 3;
-    border-radius: var(--radius-lg);
-    overflow: hidden;
-    position: relative;
-}
-
-.spline-container iframe {
+.hero-visual canvas {
     width: 100%;
     height: 100%;
-    border: none;
-    background: transparent;
-    pointer-events: auto;
+    display: block;
 }
 
 /* === About Section === */
@@ -1419,12 +1411,8 @@ html, body {
     }
 
     .hero-visual {
-        margin-top: 24px;
-        max-width: 100%;
-    }
-
-    .spline-container {
-        aspect-ratio: 1 / 1;
+        margin-top: 16px;
+        max-width: 300px;
     }
 
     /* Grids */
