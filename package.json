@@ -1,0 +1,20 @@
+{
+  "name": "menassa-website",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "test:e2e": "playwright test",
+    "test:all": "vitest run && playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "@vitest/coverage-v8": "^1.6.0",
+    "jsdom": "^29.1.1",
+    "serve": "^14.2.3",
+    "vitest": "^1.6.0"
+  }
+}
