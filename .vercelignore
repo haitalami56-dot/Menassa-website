@@ -1,9 +1,0 @@
-node_modules
-tests
-coverage
-playwright-report
-test-results
-vitest.config.js
-playwright.config.js
-package.json
-package-lock.json
